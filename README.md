@@ -11,7 +11,7 @@ Open a Terminal in your machine:
 1. `cd fabric-samples`
 2. `cd chaincode && git clone https://github.com/ascatox/product-unit-hub-chaincode.git`
 3. `cd ../chaincode-docker-devmode`
-4. `docker-compose -f docker-compose-simple.yaml up`
+4. `docker-compose -f docker-compose-simple.yaml up -d`
 5. `docker exec -it chaincode bash` (from now you are inside the container)
 6. `cd product-unit-hub-chaincode && go build`
 7. `CORE_PEER_ADDRESS=peer:7051 CORE_CHAINCODE_ID_NAME=productUnitHub:0 ./product-unit-hub-chaincode`
