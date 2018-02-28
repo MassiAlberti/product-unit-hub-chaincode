@@ -6,8 +6,9 @@
 * `go get -u --tags nopkcs11 github.com/hyperledger/fabric/core/chaincode/shim`
 * `go build --tags nopkcs11`
 ## Test the chaincode (Hyperledger Fabric dev mode)
-1. Download [Hyperledger Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/samples.html) 
-2. `cd chaincode-docker-devmode`
+1. Download [Hyperledger Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/samples.html)
+2. `cd chaincode && git clone https://github.com/ascatox/product-unit-hub-chaincode.git`
+2. `cd ../chaincode-docker-devmode`
 3. `docker-compose -f docker-compose-simple.yaml up`
 4. `docker exec -it chaincode bash`
 5. `cd product-unit-hub && go build`
