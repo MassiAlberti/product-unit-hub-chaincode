@@ -13,7 +13,7 @@
 5. `docker-compose -f docker-compose-simple.yaml up`
 6. `docker exec -it chaincode bash` (from now you are inside the container)
 7. `cd product-unit-hub-chaincode && go build`
-8. `CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=productUnitHub:0 ./product-unit-hub`
+8. `CORE_PEER_ADDRESS=peer:7051 CORE_CHAINCODE_ID_NAME=productUnitHub:0 ./product-unit-hub-chaincode`
 
 
 
