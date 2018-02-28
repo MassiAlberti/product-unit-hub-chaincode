@@ -1,4 +1,4 @@
-# product-unit-hub-chaincode
+# Chaincode for Product Unit Hub Use Case
 
 ## Compile the chaincode
 * `go get -u --tags nopkcs11 github.com/hyperledger/fabric/core/chaincode/shim`
