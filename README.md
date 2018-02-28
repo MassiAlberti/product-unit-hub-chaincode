@@ -8,5 +8,5 @@ go build --tags nopkcs11
 2. `cd chaincode-docker-devmode`
 3. `docker-compose -f docker-compose-simple.yaml up`
 4. `docker exec -it chaincode bash`
-5. cd product-unit-hub && go build
-6. CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=productunithub:0 ./product-unit-hub
+5. `cd product-unit-hub && go build`
+6. `CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=productunithub:0 ./product-unit-hub
