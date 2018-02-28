@@ -1,8 +1,8 @@
 # product-unit-hub-chaincode
 
 ## Compile the chaincode
-`go get -u --tags nopkcs11 github.com/hyperledger/fabric/core/chaincode/shim`
-`go build --tags nopkcs11`
+* `go get -u --tags nopkcs11 github.com/hyperledger/fabric/core/chaincode/shim`
+* `go build --tags nopkcs11`
 ## Test the chaincode (dev mode)
 1. Download [Hyperledger Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/samples.html) 
 2. `cd chaincode-docker-devmode`
