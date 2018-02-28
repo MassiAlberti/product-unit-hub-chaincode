@@ -19,7 +19,7 @@ Open a Terminal in your machine:
 Open a new Terminal in your machine: 
 1. `docker exec -it cli bash`
 2. `peer chaincode install -p chaincodedev/chaincode/product-unit-hub-chaincode -n productUnitHub -v 0`
-3. `peer chaincode instantiate -n productUnitHub -v 0 -c '{"Args":["a","10"]}' -C mychannel`
-4. `peer chaincode invoke -n productUnitHub -c '{"Args":["set", "a", "20"]}' -C mychannel` or `peer chaincode query -n mycc -c '{"Args":["query","a"]}' -C mychannel` (Beware change 'set' and parameters and 'query' and parameters with the functions inside your Go code)
+3. `peer chaincode instantiate -n productUnitHub -v 0 -c '{"Args":["a","10"]}' -C myc`
+4. `peer chaincode invoke -n productUnitHub -c '{"Args":["set", "a", "20"]}' -C myc` or `peer chaincode query -n productUnitHub -c '{"Args":["query","a"]}' -C myc` (Beware change 'set' and parameters and 'query' and parameters with the functions inside your Go code)
 
 
