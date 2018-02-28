@@ -6,7 +6,7 @@
 * `go get -u --tags nopkcs11 github.com/hyperledger/fabric/core/chaincode/shim`
 * `go build --tags nopkcs11`
 ## Test the chaincode (Hyperledger Fabric Peer dev mode)
-Download [Hyperledger Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/samples.html)
+Download [Hyperledger Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/samples.html) <br/>
 Open a Terminal in your machine:
 1. `cd fabric-samples`
 2. `cd chaincode && git clone https://github.com/ascatox/product-unit-hub-chaincode.git`
