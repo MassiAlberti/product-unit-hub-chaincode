@@ -10,3 +10,6 @@
 4. `docker exec -it chaincode bash`
 5. `cd product-unit-hub && go build`
 6. `CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=productUnitHub:0 ./product-unit-hub`
+
+
+We reccomend [VSCode](https://code.visualstudio.com/) as IDE for development with this [plugin](https://code.visualstudio.com/docs/languages/go) correctly installed!
