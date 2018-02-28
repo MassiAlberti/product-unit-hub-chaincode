@@ -10,14 +10,14 @@ Download [Hyperledger Fabric Samples](https://hyperledger-fabric.readthedocs.io/
 Open a Terminal in your machine:
 1. `cd fabric-samples`
 2. `cd chaincode && git clone https://github.com/ascatox/product-unit-hub-chaincode.git`
-3. `cd ../chaincode-docker-devmode`
+3. `cd ../chaincode-docker-devmode && chmod +x script.sh`
 4. `docker-compose -f docker-compose-simple.yaml up -d`
 5. `docker exec -it chaincode bash` (from now you are inside the container)
 6. `cd product-unit-hub-chaincode && go build`
 7. `CORE_PEER_ADDRESS=peer:7051 CORE_CHAINCODE_ID_NAME=productUnitHub:0 ./product-unit-hub-chaincode`
 
 Open a new Terminal in your machine: 
-1. `docker exec -it chaincode bash`
+1. `docker exec -it cli bash`
 2. `peer chaincode install -p chaincodedev/chaincode/product-unit-hub-chaincode -n productUnitHub -v 0`
 3. `peer chaincode instantiate -n productUnitHub -v 0 -c '{"Args":["a","10"]}' -C mychannel`
 4. `peer chaincode invoke -n productUnitHub -c '{"Args":["set", "a", "20"]}' -C mychannel` or `peer chaincode query -n mycc -c '{"Args":["query","a"]}' -C mychannel` (Beware change 'set' and parameters and 'query' and parameters with the functions inside your Go code)
